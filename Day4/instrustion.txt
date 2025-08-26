@@ -1,0 +1,18 @@
+# How to Run Hello World API
+
+1. Repository clone karein:
+   git clone <repo-url>
+   cd hello-world-api
+
+2. Dependencies install karein:
+   npm install
+
+3. API start karein:
+   npm start
+
+4. Browser me khol kar test karein:
+   http://localhost:3000/
+
+Note:
+- Node.js v18+ recommended.
+- node_modules/ GitHub par upload nahi hai, npm install zaruri hai.
