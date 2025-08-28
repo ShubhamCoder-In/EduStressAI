@@ -1,0 +1,27 @@
+# 1. Create Vite React project
+npm create vite@latest profile-card-app
+# Choose: React, JavaScript
+
+# 2. Navigate into project folder
+cd profile-card-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
+npm run dev
+
+# 5. Create components folder
+mkdir src/components
+
+# 6. Create ProfileCard component
+touch src/components/ProfileCard.jsx
+
+# 7. Edit ProfileCard.jsx
+# Paste the ProfileCard code into this file
+
+# 8. Edit src/App.jsx
+# Replace default content with multiple users rendering code
+
+# 9. Open project in browser
+# Copy URL shown after running npm run dev (usually http://localhost:5173)
