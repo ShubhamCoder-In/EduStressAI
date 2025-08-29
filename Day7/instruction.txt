@@ -1,0 +1,37 @@
+React Project Setup Instructions
+
+1. Install Node.js
+   - Download and install Node.js (LTS version recommended) from https://nodejs.org
+   - Verify installation by running "node -v" and "npm -v" in your terminal.
+
+2. Create a New React Project (using Vite)
+   - Run: npm create vite@latest my-app
+   - When prompted, choose "React" (or "React + TypeScript" if you prefer).
+   - Navigate into the project folder: cd my-app
+   - Install dependencies: npm install
+
+3. Start the Development Server
+   - Run: npm run dev
+   - Open the provided local URL in your browser (usually http://localhost:5173).
+
+4. Project Structure
+   - src/ folder: contains App.jsx and other React components.
+   - public/ folder: for static files.
+   - package.json: manages dependencies and scripts.
+
+5. Add Your Code
+   - Replace the default content in App.jsx with your own component(s).
+
+6. (Optional) Add Tailwind CSS for Styling
+   - Install Tailwind: npm install -D tailwindcss postcss autoprefixer
+   - Initialize config: npx tailwindcss init -p
+   - Update "tailwind.config.js" to include "src" paths.
+   - Add Tailwind directives in src/index.css: 
+     @tailwind base; 
+     @tailwind components; 
+     @tailwind utilities;
+
+7. Run and Build
+   - Development: npm run dev
+   - Production build: npm run build
+   - Preview build: npm run preview
