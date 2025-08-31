@@ -1,0 +1,15 @@
+# Instructions to Run Student API with Styled Homepage
+
+## 1. Setup Project
+1. Make a new folder for your project
+   mkdir student-api && cd student-api
+
+2. Initialize Node.js project
+   npm init -y
+
+3. Install Express
+   npm install express
+   npm install cors
+
+4. Create files:
+   - server.js
