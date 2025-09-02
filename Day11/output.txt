@@ -1,0 +1,192 @@
+### 
+GET http://localhost:5000/api/students
+
+output 
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+ETag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+Date: Tue, 02 Sep 2025 10:30:40 GMT
+Connection: close
+
+[]
+
+###
+GET http://localhost:5000/api/students/64ef4b2f3a6a9c3b5f21c7d8
+
+
+output:
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 31
+ETag: W/"1f-LU9H1tMP71GW4rOZhbj+Fk6EQVY"
+Date: Tue, 02 Sep 2025 10:31:43 GMT
+Connection: close
+
+{
+  "message": "Student not found"
+}
+
+### 
+POST http://localhost:5000/api/students
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "age": 21
+}
+
+output:
+
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 144
+ETag: W/"90-sD8+iFFsiudxgpk5z6ApoRl4fp4"
+Date: Tue, 02 Sep 2025 10:32:44 GMT
+Connection: close
+
+{
+  "name": "Alice",
+  "age": 21,
+  "_id": "68b6c7ca42e308d4289b8736",
+  "createdAt": "2025-09-02T10:32:42.159Z",
+  "updatedAt": "2025-09-02T10:32:42.159Z",
+  "__v": 0
+}
+
+###
+GET http://localhost:5000/api/students/68b6c7ca42e308d4289b8736
+
+
+output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 144
+ETag: W/"90-XdpTf1uIspWCwlPtbpYg/CuSQx0"
+Date: Tue, 02 Sep 2025 10:34:25 GMT
+Connection: close
+
+{
+  "_id": "68b6c7ca42e308d4289b8736",
+  "name": "Alice",
+  "age": 21,
+  "createdAt": "2025-09-02T10:32:42.159Z",
+  "updatedAt": "2025-09-02T10:32:42.159Z",
+  "__v": 0
+}
+
+### 
+GET http://localhost:5000/api/students
+
+output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 146
+ETag: W/"92-WJTz2hQM7p9mit2bYp2jidCo3r8"
+Date: Tue, 02 Sep 2025 10:35:07 GMT
+Connection: close
+
+[
+  {
+    "_id": "68b6c7ca42e308d4289b8736",
+    "name": "Alice",
+    "age": 21,
+    "createdAt": "2025-09-02T10:32:42.159Z",
+    "updatedAt": "2025-09-02T10:32:42.159Z",
+    "__v": 0
+  }
+]
+
+###
+PUT http://localhost:5000/api/students/68b6c7ca42e308d4289b8736
+Content-Type: application/json
+
+{
+  "name": "Alice Updated",
+  "age": 23
+}
+
+output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 152
+ETag: W/"98-RcGIThHR813QI9enQXapUX885ZY"
+Date: Tue, 02 Sep 2025 10:36:48 GMT
+Connection: close
+
+{
+  "_id": "68b6c7ca42e308d4289b8736",
+  "name": "Alice Updated",
+  "age": 23,
+  "createdAt": "2025-09-02T10:32:42.159Z",
+  "updatedAt": "2025-09-02T10:36:47.807Z",
+  "__v": 0
+}
+
+### 
+GET http://localhost:5000/api/students
+
+output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 154
+ETag: W/"9a-M+cNbWtmyHzQC6XgE2EfQ5h37tg"
+Date: Tue, 02 Sep 2025 10:37:33 GMT
+Connection: close
+
+[
+  {
+    "_id": "68b6c7ca42e308d4289b8736",
+    "name": "Alice Updated",
+    "age": 23,
+    "createdAt": "2025-09-02T10:32:42.159Z",
+    "updatedAt": "2025-09-02T10:36:47.807Z",
+    "__v": 0
+  }
+]
+
+###
+DELETE http://localhost:5000/api/students/68b6c7ca42e308d4289b8736
+
+output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+ETag: W/"1d-xM8teusA54LB50bevTlxPmN0z+c"
+Date: Tue, 02 Sep 2025 10:38:25 GMT
+Connection: close
+
+{
+  "message": "Student deleted"
+}
+
+### 
+GET http://localhost:5000/api/students
+
+output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+ETag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+Date: Tue, 02 Sep 2025 10:39:18 GMT
+Connection: close
+
+[]
