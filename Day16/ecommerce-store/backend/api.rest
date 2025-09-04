@@ -1,0 +1,18 @@
+### Add Product
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "Test Product",
+  "price": 999,
+  "description": "This is a sample product",
+  "image": "https://via.placeholder.com/150",
+  "category": "Electronics",
+  "stock": 20
+}
+
+### Get All Products
+GET http://localhost:5000/api/products
+
+### Get Product by ID (replace with actual ID from DB)
+GET http://localhost:5000/api/products/64ef4b2f3a6a9c3b5f21c7d8
