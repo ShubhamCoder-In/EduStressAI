@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:6
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - 27017:27017
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    ports:
+      - 5000:5000
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/trelloClone
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
+      - NODE_ENV=production
+      - FRONTEND_ORIGIN=http://localhost:3000
+    depends_on:
+      - mongo
+    volumes:
+      - ./backend:/app
+
+volumes:
+  mongo-data:
