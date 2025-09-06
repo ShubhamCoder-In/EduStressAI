@@ -110,7 +110,11 @@ This project is a collaborative effort of all team members. Each member actively
 * Round 1 Hackathon submission completed, highlighting our AI model approach and working
 * Multiple mini-tasks completed within the Hackathon time limit
 * Presentation and PPT included in this repository
-* Video demonstration will be uploaded soon due to network issues. [View Video](#)
+* add video now available to everyone.
+*
+*   ## 📽️ watch publiv video for our project Idea.  
+[Watch the Video](https://drive.google.com/file/d/1vm57VZ_C36sNkMUQgX65i5JtjHPGwuKR/view?usp=sharing)
+
 
 ---
 
